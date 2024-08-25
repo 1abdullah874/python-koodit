@@ -37,3 +37,15 @@ totalkilo = grams1 + grams2 + grams3
 grams = totalkilo % 1000
 kilograms = int((totalkilo - grams)/ 1000)
 print("Weight in modern unit is", kilograms,f"kg and{grams: .2f} g")
+
+
+import random
+def generate_combination():
+    combination_3digits =(random.randint(0, 9) for _ in range(3))
+    combination_4digits =(random.randint(1, 6) for _ in range(4))
+    return combination_3digits, combination_4digits
+
+comb_3, comb_4 = generate_combination()
+print(f"3-digit combination  (0-9): {comb_3}")
+print(f"4-digit combination (1-6): {comb_4}")
+
