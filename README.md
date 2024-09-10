@@ -1,2 +1,2 @@
-# python-koodit
+# Assignments
 Omat Python-ohjelmakoodit
